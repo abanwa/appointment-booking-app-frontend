@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: Outfit;
+}
+
+/* this will make the navLink hr to show when we are on the page of the navlink . the block class will be applied which will override the hidden class that is already there */
+.active hr {
+  @apply block;
+}
+
+/* to hide scrollbar */
+::-webkit-scrollbar {
+  @apply hidden;
+}
+
+@media (max-width: 740px){
+  .active p {
+    @apply text-white bg-primary
+  }
+}
